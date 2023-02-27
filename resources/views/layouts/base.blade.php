@@ -16,9 +16,13 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+        <!-- animate css -->
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <wireui:scripts />
         @livewireStyles
         @livewireScripts
+        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
